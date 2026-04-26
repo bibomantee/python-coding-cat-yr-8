@@ -23,3 +23,34 @@ pen.forward(40)
 pen.hideturtle()
 #keep turtle window open when done
 turtle.done()
+
+def tree(n):
+    if n == 0:
+        return
+    turtle.forward(50)
+    
+    pos = turtle.position()
+    heading = turtle.heading()
+    turtle.left(30)
+    tree(n-1)
+    turtle.setposition(pos)
+    turtle.setheading(heading)
+    turtle.right
+    tree(n-1)
+    turtle.setposition(pos)
+    turtle.setheading(heading)
+    turtle.backward(50)
+    
+def draw_tree(level, x_offset):
+    turtle.penup()
+    turtle.goto(x_offset, -200)
+    turtle.pendown()
+    turtle.setheading(90)
+    tree(level)
+
+turtle.speed(0)
+turtle.hideturtle()
+
+draw_tree(5, -100)
+
+turtle.done()
