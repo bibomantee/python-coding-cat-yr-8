@@ -1,10 +1,10 @@
 import turtle
 
-#[-------- Values --------]
-n = 8
-length = 100
-angle  = 30
-scale  = 0.75
+#[-------- Determining the values --------]
+n = int(input("tree level "))
+length = int(input("length pixels "))
+angle  = int(input("angle between branches "))
+scale  = (float(input("scale or size ")))
 
 #[-------- Fractal Tree --------]
 
