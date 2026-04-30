@@ -20,7 +20,7 @@ def fractaltree(n, length, angle, scale):
      turtle.backward(length)
 
 #[-------- Turtle Settings --------]
-
+turtle.tracer(False)
 turtle.speed(0)
 turtle.penup()
 turtle.goto(0, -200)
