@@ -8,5 +8,3 @@ def fibonacci(n):
 
 for i in range(1, 11):
     print(fibonacci(i), end=", ")
-
-print(fibonacci(10))
